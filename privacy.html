@@ -8,29 +8,43 @@
       name="description"
       content="Privacy Policy for Moodii."
     />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
   </head>
   <body>
     <main class="shell">
       <nav class="nav">
         <a class="brand" href="./index.html">
-          <span class="mark" aria-hidden="true">
-            <span class="mark-bar low"></span>
-            <span class="mark-bar up"></span>
-            <span class="mark-bar calm"></span>
+          <span class="brand-logo-frame">
+            <img class="brand-logo" src="./logo.png" alt="Moodii logo" />
           </span>
           Moodii
         </a>
-        <div class="nav-links">
-          <a href="./support.html">Support</a>
-          <a href="./privacy.html">Privacy</a>
+        <div class="nav-menu">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Open site menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="menu-dropdown" id="site-menu" hidden>
+            <a href="./support.html">Support</a>
+            <a href="./privacy.html">Privacy</a>
+          </div>
         </div>
       </nav>
 
       <section class="panel compact">
         <span class="eyebrow">Privacy</span>
         <h2>Privacy Policy for Moodii</h2>
-        <p>Effective date: [replace with your launch date]</p>
+        <p>Effective date: March 24, 2026</p>
         <p>Moodii is designed to work primarily on your device.</p>
       </section>
 
@@ -41,8 +55,8 @@
           settings locally on your device.
         </p>
         <p>
-          If you choose a profile photo, the selected image is stored locally on
-          your device.
+          If you choose a profile photo, Moodii stores a local reference to that
+          selected photo on your device.
         </p>
         <p>
           If you enable reminders, notification-related settings are stored
@@ -89,9 +103,18 @@
         <h3>Contact</h3>
         <p>
           If you have questions about this Privacy Policy, contact:
-          <a href="mailto:yongchenle@gmail.com">yongchenle@gmail.com</a>
+          <a href="mailto:chenle.yong16@gmail.com">chenle.yong16@gmail.com</a>
         </p>
       </section>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="./index.html">Home</a>
+          <a href="./support.html">Support</a>
+          <a href="./privacy.html">Privacy</a>
+        </div>
+        <p>© 2026 Moodii</p>
+      </footer>
     </main>
   </body>
 </html>
